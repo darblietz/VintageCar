@@ -20,7 +20,6 @@ body {
   font-family: "Racing Sans One", cursive;
   background-color: var(--bg);
   color: #eee;
-  /* min-height: 3000px; */
 }
 
 /* Navbar Start */
@@ -133,6 +132,7 @@ body {
   display: inline-block;
   color: var(--bg);
   background-color: rgb(184, 185, 236);
+  font-size: 1.2rem;
   padding: 0.5rem 1rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
@@ -297,15 +297,11 @@ body {
 
 .footer .media a {
   padding: 0rem 1rem;
-  color: #eee;
+  color: rgb(184, 185, 236);
 }
 
 .footer .nav {
   margin-top: 1rem;
-}
-
-.footer .media a:hover {
-  color: rgb(184, 185, 236);
 }
 
 .footer .nav a {
@@ -313,7 +309,7 @@ body {
   color: #eee;
 }
 
-.footer .nav a:hover {
+.footer .nav span {
   color: rgb(184, 185, 236);
 }
 
@@ -342,6 +338,10 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   #menu {
@@ -375,7 +375,7 @@ body {
   }
 
   .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.3);
+    transform: scaleX(0.2);
   }
 
   /* Hero Section Start */
